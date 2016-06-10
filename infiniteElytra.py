@@ -1,7 +1,6 @@
 from mcpi.minecraft import Minecraft
 mc = Minecraft.create()
 
-import random
 import time
 
 # flying flag
