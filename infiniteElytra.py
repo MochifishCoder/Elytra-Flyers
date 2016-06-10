@@ -19,7 +19,7 @@ while True:
     z = pos.z
 
     # should we enable flying?
-    if flying == False and y >= 80:
+    if flying == False and y >= 100:
         mc.postToChat("Now Flying! Go to y = 80 or below to stop!")
         flying = True
         # remember when we started flying
@@ -38,6 +38,6 @@ while True:
             start = time.time()
 
         # time to stop flying?
-        elif y <= 80:
+        elif y <= 99:
             mc.postToChat("No Longer Flying! Go to y = 80 or above to fly again!")
             flying = False
