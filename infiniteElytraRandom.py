@@ -20,7 +20,7 @@ while True:
     z = pos.z
 
     # should we enable flying?
-    if flying == False and y >= 80:
+    if flying == False and y >= 100:
         mc.postToChat("Now Flying! Go to y = 80 or below to stop!")
         flying = True
         # remember when we started flying
@@ -31,7 +31,7 @@ while True:
         # is it time to move the player?
         if time.time() - start > 15:
             x = random.randint(1, 10000)
-            y = random.randint(256, 1024)
+            y = random.randint(256, 512)
             z = random.randint(1, 10000)
             mc.player.setTilePos(x, y, z)
 
@@ -39,7 +39,7 @@ while True:
             start = time.time()
 
         # time to stop flying?
-        elif y <= 80:
+        elif y <= 99:
             mc.postToChat("No Longer Flying! Go to y = 80 or above to fly again!")
             flying = False
 
