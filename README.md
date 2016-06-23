@@ -14,4 +14,5 @@ Collaborator: weevilgenius
 
 #Future Updates
 
-v3.0 IS EXPECTED IN EARLY JULY!!!
+v2.1 IS EXPECTED IN EARLY JULY!!!
+v3.0 IS EXPECTED IN AUGUST!!!
