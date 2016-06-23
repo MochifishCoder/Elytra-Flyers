@@ -3,11 +3,17 @@ mc = Minecraft.create()
 
 mc.postToChat("Go to y = 100 or above to fly!")
 
-if y >= 100:
+while True:
+  
   mc.player.getPos()
+
+  if y >= 100:
+    mc.player.getPos()
   
-  x = pos.x
-  y = 512
-  z = pos.y
+    x = pos.x
+    y = 512
+    z = pos.y
   
-  mc.player.setTilePos(x, y, z)
+    mc.player.setTilePos(x, y, z)
+    
+    break
