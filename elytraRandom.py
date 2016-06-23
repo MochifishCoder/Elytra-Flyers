@@ -3,8 +3,11 @@ mc = Minecraft.create()
 
 import random
 
-x = random.randint(1, 10000)
-y = random.randint(256, 512)
-z = random.randint(1, 10000)
+mc.postToChat("Go to y = 100 or above to fly!")
 
-mc.player.setTilePos(x, y, z)
+if y >= 100:
+  x = random.randint(1, 10000)
+  y = random.randint(256, 512)
+  z = random.randint(1, 10000)
+
+  mc.player.setTilePos(x, y, z)
