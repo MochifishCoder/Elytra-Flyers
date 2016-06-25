@@ -4,10 +4,20 @@ mc = Minecraft.create()
 mc.postToChat("Go to y = 100 or above to fly!")
 
 while True:
+  flying = False
+  stop = False
   
-  mc.player.getPos()
+  pos = mc.player.getPos()
+  
+  x = pos.x
+  y = pos.y
+  z = pos.z
 
-  if y >= 100:
+  if y >= 100 and flying == False:
+    flying = True
+    
+    mc.postToChat("Now flying!")
+    
     mc.player.getPos()
   
     x = pos.x
@@ -16,4 +26,11 @@ while True:
   
     mc.player.setTilePos(x, y, z)
     
-    break
+    mc.player.getPos()
+    
+    if y >= 100 and flying == True and stop == False:
+      flying = False
+      
+      stop = true
+      
+      mc.postToChat("Go to y = 100 or above to fly again!")
